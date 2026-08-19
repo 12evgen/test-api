@@ -1,0 +1,10 @@
+workspace:
+  id: 211a6bef-d646-4ddf-8955-b303537c7854
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/User API — Native GraphQL: 6a7f459c19c3ff65efa6428e
+  globals:
+    ../postman/globals/workspace.globals.yaml: 80493c31-9c77-4c8a-8c3d-4a233946cf57

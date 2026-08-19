@@ -3,12 +3,12 @@ name: login
 url: https://dev-user-api.amatechs.net/graphql
 query: |
   mutation Login($input: LoginRequest!) {
-      login(input: $input) {
-          data
-          id
-      }
+    login(input: $input) {
+      id
+      data
+    }
   }
-variables: "{\"input\":{\"password\":\"\",\"username\":\"\"}}"
+variables: '{"input":{"password":"","username":""}}'
 headers:
   x-site-name: playbros
 settings: {}

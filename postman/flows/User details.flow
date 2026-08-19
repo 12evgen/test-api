@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "name": "User details",
+  "description": "",
+  "flow": {
+    "description": "",
+    "nodes": {
+      "MZT60v3D": {
+        "type": "ev/endpoint@3",
+        "pos": {
+          "x": 0,
+          "y": -72
+        },
+        "config": {
+          "inputs": [
+            {
+              "id": "cTX-yeOB",
+              "type": "value/reference@2",
+              "kind": "reference",
+              "value": "",
+              "key": "username",
+              "__noIn": true
+            },
+            {
+              "id": "z0FTgpZr",
+              "type": "value/reference@2",
+              "kind": "reference",
+              "value": "",
+              "key": "password",
+              "__noIn": true
+            }
+          ],
+          "data": "",
+          "language": "json",
+          "allowAnyType": false,
+          "inputs__expanded": true
+        },
+        "ui": {
+          "data": {
+            "triggerType": "ev/endpoint@3"
+          },
+          "namedInputsExpanded": true
+        }
+      },
+      "4kcaYAeU": {
+        "type": "task/graphql-request@1",
+        "pos": {
+          "x": 432,
+          "y": -96
+        },
+        "config": {
+          "element": {
+            "id": "0407754a8C8a00FFcd4e6a6B",
+            "collection": "DC6Ac4c68cb800dc69c92aD8"
+          },
+          "environment": null,
+          "parseBody": "auto",
+          "requestVariables": [],
+          "ignoreTestResults": true,
+          "scriptsModifyEnvVars": true,
+          "trackGlobalEnvironment": true,
+          "requestVariables__expanded": true
+        },
+        "ui": {
+          "data": {},
+          "namedInputsExpanded": true
+        }
+      },
+      "mSgL1Y6Y": {
+        "type": "task/graphql-request@1",
+        "pos": {
+          "x": 888,
+          "y": -96
+        },
+        "config": {
+          "element": {
+            "id": "1beF2B24B9515642AEbEA3dc",
+            "collection": "DC6Ac4c68cb800dc69c92aD8",
+            "name": "user"
+          },
+          "environment": null,
+          "parseBody": "auto",
+          "requestVariables": [],
+          "ignoreTestResults": true,
+          "scriptsModifyEnvVars": true,
+          "trackGlobalEnvironment": true,
+          "requestVariables__expanded": true
+        },
+        "ui": {
+          "data": {},
+          "namedInputsExpanded": true
+        }
+      }
+    },
+    "connections": {
+      "F72sbxHd": {
+        "source": "0RMcCF3E",
+        "sourcePort": "@",
+        "target": "MZT60v3D",
+        "targetPort": "inputs|cTX-yeOB"
+      },
+      "T5JEYmQV": {
+        "source": "KSSpZgqB",
+        "sourcePort": "@",
+        "target": "MZT60v3D",
+        "targetPort": "inputs|z0FTgpZr"
+      },
+      "CKxtNElC": {
+        "source": "MZT60v3D",
+        "target": "4kcaYAeU",
+        "sourcePort": "output|cTX-yeOB",
+        "targetPort": "AI"
+      },
+      "8Bf5MlJD": {
+        "source": "4kcaYAeU",
+        "target": "mSgL1Y6Y",
+        "sourcePort": "success",
+        "targetPort": "AI"
+      },
+      "YSK9KSlR": {
+        "source": "MZT60v3D",
+        "target": "4kcaYAeU",
+        "sourcePort": "output|z0FTgpZr",
+        "targetPort": "AI"
+      }
+    },
+    "annotations": {},
+    "groups": {},
+    "webhook": {
+      "payloadContent": "body-only",
+      "responseType": "default"
+    },
+    "forms": {},
+    "modules": {},
+    "io": {
+      "0RMcCF3E": {
+        "type": "input",
+        "name": "username",
+        "typeDef": {
+          "type": "string"
+        }
+      },
+      "KSSpZgqB": {
+        "type": "input",
+        "name": "password",
+        "typeDef": {
+          "type": "string"
+        }
+      }
+    },
+    "ports": {},
+    "meta": {},
+    "scenes": {},
+    "scenarios": {
+      "FFs3Jhig": {
+        "name": "Start Trigger",
+        "type": "scenario@3",
+        "triggerType": "ev/endpoint@3",
+        "createdOn": 1787125674943,
+        "updatedOn": 1787125674943,
+        "data": {
+          "0RMcCF3E": {
+            "id": "0RMcCF3E",
+            "key": "Input 1",
+            "value": "",
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "config": {
+      "definitions": {},
+      "constants": {}
+    }
+  },
+  "lockbox": {},
+  "info": {
+    "_postman_id": "5840f7a7-ac9c-4da5-a24f-545227df93f1"
+  },
+  "_postman_exported_at": "2026-08-19T07:55:41.381Z",
+  "_postman_exported_using": "Postman/Local Mode"
+}
