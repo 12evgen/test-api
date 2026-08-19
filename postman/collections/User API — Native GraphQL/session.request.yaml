@@ -1,0 +1,19 @@
+$kind: graphql-request
+name: session
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query Session {
+      session {
+          active
+          currentTime
+          duration
+          startTime
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000062

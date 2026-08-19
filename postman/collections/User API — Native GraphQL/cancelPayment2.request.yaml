@@ -1,0 +1,16 @@
+$kind: graphql-request
+name: cancelPayment2
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation CancelPayment2($id: ID!) {
+      cancelPayment2(id: $id) {
+          __typename
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000079

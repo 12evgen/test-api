@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: removeGameFromFavourites
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation RemoveGameFromFavourites($id: ID!) {
+      removeGameFromFavourites(id: $id) {
+          data
+          id
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000117

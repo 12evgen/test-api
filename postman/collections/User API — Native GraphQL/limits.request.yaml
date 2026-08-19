@@ -1,0 +1,24 @@
+$kind: graphql-request
+name: limits
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query Limits($input: UserLimitsRequest) {
+      limits(input: $input) {
+          accumulated
+          active
+          amount
+          amountUsed
+          continuous
+          endTime
+          name
+          period
+          startTime
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000047

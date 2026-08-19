@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: loginWithAuthToken
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation LoginWithAuthToken($token: String!) {
+      loginWithAuthToken(token: $token) {
+          data
+          id
+      }
+  }
+variables: "{\"token\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000105

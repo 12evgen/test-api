@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: setLimit
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation SetLimit($input: SetLimitRequest!) {
+      setLimit(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"amount\":0,\"name\":\"DailyDeposit\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000122

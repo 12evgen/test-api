@@ -1,0 +1,20 @@
+$kind: graphql-request
+name: casinoGameFilterSet
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query CasinoGameFilterSet($id: ID!) {
+      casinoGameFilterSet(id: $id) {
+          backgroundUrl
+          iconUrl
+          id
+          name
+          variant
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000013

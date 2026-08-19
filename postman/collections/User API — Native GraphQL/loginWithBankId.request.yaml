@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: loginWithBankId
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation LoginWithBankId($input: BankIdLoginRequest) {
+      loginWithBankId(input: $input) {
+          data
+          id
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000106

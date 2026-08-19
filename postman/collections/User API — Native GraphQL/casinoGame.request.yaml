@@ -1,0 +1,41 @@
+$kind: graphql-request
+name: casinoGame
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query CasinoGame($id: ID!) {
+      casinoGame(id: $id) {
+          bonusBetLimit
+          bonusEnabled
+          bonuses
+          cashBetLimit
+          category
+          currentJackpot
+          demo
+          description
+          enabled
+          favourite
+          freeSpins
+          hasBonus
+          hasCash
+          hasFreeSpins
+          hasJackpot
+          help
+          hidden
+          id
+          live
+          name
+          new
+          ratio
+          recent
+          releaseDate
+          ribbon
+          rtp
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000011

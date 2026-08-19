@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: deleteAuthToken
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation DeleteAuthToken($id: ID!) {
+      deleteAuthToken(id: $id) {
+          data
+          id
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000093

@@ -1,0 +1,23 @@
+$kind: graphql-request
+name: casinoGames
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query CasinoGames($input: CasinoGameSearchRequest!) {
+      casinoGames(input: $input) {
+          hasContent
+          isFirst
+          isLast
+          page
+          size
+          sort
+          totalElements
+          totalPages
+      }
+  }
+variables: "{\"input\":{\"page\":0,\"size\":0,\"sort\":\"ASC\",\"sortBy\":\"id\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000019

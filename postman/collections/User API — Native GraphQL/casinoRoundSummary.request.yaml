@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: casinoRoundSummary
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query CasinoRoundSummary($input: CasinoRoundSummaryRequest!) {
+      casinoRoundSummary(input: $input) {
+          bonusNet
+          bonusStake
+          bonusWins
+          cashNet
+          cashStake
+          cashWins
+          currency
+      }
+  }
+variables: "{\"input\":{}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000023

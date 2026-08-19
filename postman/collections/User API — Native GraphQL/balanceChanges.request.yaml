@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: balanceChanges
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query BalanceChanges($input: BalanceChangeSearchRequest!) {
+      balanceChanges(input: $input) {
+          hasContent
+          isFirst
+          isLast
+          page
+          size
+          totalElements
+          totalPages
+      }
+  }
+variables: "{\"input\":{\"page\":0,\"size\":0}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000007

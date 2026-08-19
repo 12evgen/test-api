@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: loginPIN
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation LoginPIN($input: LoginPINRequest!) {
+      loginPIN(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"username\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000104

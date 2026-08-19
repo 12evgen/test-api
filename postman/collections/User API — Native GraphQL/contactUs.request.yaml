@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: contactUs
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation ContactUs($input: ContactUsRequest!) {
+      contactUs(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"email\":\"\",\"message\":\"\",\"name\":\"\",\"subject\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000089

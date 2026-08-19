@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: storeDeviceToken
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation StoreDeviceToken($input: StoreDeviceTokenRequest!) {
+      storeDeviceToken(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"token\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000125

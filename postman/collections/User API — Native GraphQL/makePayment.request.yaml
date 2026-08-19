@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: makePayment
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation MakePayment($input: MakePaymentRequest!) {
+      makePayment(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"amount\":0,\"optionId\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000109

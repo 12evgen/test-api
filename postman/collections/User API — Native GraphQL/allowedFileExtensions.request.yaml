@@ -1,0 +1,14 @@
+$kind: graphql-request
+name: allowedFileExtensions
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query AllowedFileExtensions {
+      allowedFileExtensions
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000003

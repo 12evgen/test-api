@@ -1,0 +1,16 @@
+$kind: graphql-request
+name: jackpotWinnings
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query JackpotWinnings($size: Int!) {
+      jackpotWinnings(size: $size) {
+          __typename
+      }
+  }
+variables: "{\"size\":0}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000039

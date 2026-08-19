@@ -1,0 +1,31 @@
+$kind: graphql-request
+name: casinoPromoBonus
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query CasinoPromoBonus($id: ID!) {
+      casinoPromoBonus(id: $id) {
+          balance
+          campaignId
+          campaignName
+          cancellable
+          createdTime
+          currency
+          expirationTime
+          filterId
+          id
+          initialBonus
+          maxConversion
+          remaining
+          status
+          wagered
+          wageringFactor
+          wageringRequirement
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000020

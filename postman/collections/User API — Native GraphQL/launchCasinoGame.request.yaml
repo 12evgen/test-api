@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: launchCasinoGame
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation LaunchCasinoGame($input: CasinoGameLaunchRequest!) {
+      launchCasinoGame(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"demo\":false,\"id\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000102

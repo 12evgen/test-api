@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: uploadDocument
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation UploadDocument($input: UploadDocumentRequest!) {
+      uploadDocument(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"files\":[],\"type\":\"ADDRESS_CARD\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000130

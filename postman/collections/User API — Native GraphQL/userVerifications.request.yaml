@@ -1,0 +1,19 @@
+$kind: graphql-request
+name: userVerifications
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query UserVerifications {
+      userVerifications {
+          id
+          sourceId
+          verified
+          verifiedTime
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000074

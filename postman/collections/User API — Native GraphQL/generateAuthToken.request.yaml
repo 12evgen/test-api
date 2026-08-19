@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: generateAuthToken
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation GenerateAuthToken($device: String!) {
+      generateAuthToken(device: $device) {
+          data
+          id
+      }
+  }
+variables: "{\"device\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000100

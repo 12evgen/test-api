@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: updateUserDetail
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation UpdateUserDetail($input: UpdateUserDetailRequest!) {
+      updateUserDetail(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000129

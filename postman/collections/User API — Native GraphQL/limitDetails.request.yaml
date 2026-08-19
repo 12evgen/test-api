@@ -1,0 +1,19 @@
+$kind: graphql-request
+name: limitDetails
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query LimitDetails {
+      limitDetails {
+          defaultAmount
+          maxAmount
+          minAmount
+          name
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000045

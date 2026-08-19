@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: blocker
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query Blocker($input: BlockerType!) {
+      blocker(input: $input) {
+          description
+          id
+      }
+  }
+variables: "{\"input\":\"DEPOSIT\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000009

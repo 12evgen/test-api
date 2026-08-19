@@ -1,0 +1,18 @@
+$kind: graphql-request
+name: startExternalAuthFlow
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation StartExternalAuthFlow($input: ExternalAuthIdentityStartInput!) {
+      startExternalAuthFlow(input: $input) {
+          authUrl
+          flowId
+          providerId
+      }
+  }
+variables: "{\"input\":{\"flowType\":\"LOGIN\",\"providerId\":0}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000123

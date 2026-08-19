@@ -1,0 +1,31 @@
+$kind: graphql-request
+name: casinoGameLaunchOptions
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query CasinoGameLaunchOptions($gameId: ID!) {
+      casinoGameLaunchOptions(gameId: $gameId) {
+          balance
+          campaignId
+          campaignName
+          cancellable
+          createdTime
+          currency
+          expirationTime
+          filterId
+          id
+          initialBonus
+          maxConversion
+          remaining
+          status
+          wagered
+          wageringFactor
+          wageringRequirement
+      }
+  }
+variables: "{\"gameId\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000015

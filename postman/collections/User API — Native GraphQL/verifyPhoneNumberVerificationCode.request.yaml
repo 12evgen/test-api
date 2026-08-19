@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: verifyPhoneNumberVerificationCode
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation VerifyPhoneNumberVerificationCode($input: VerifyVerificationRequest!) {
+      verifyPhoneNumberVerificationCode(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"code\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000133

@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: userEvents
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query UserEvents($input: UserEventLogSearchRequest!) {
+      userEvents(input: $input) {
+          hasContent
+          isFirst
+          isLast
+          page
+          size
+          totalElements
+          totalPages
+      }
+  }
+variables: "{\"input\":{\"page\":0,\"size\":0,\"sort\":\"ASC\",\"sortBy\":\"id\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000072

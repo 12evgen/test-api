@@ -1,0 +1,16 @@
+$kind: graphql-request
+name: deviceToken
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query DeviceToken($deviceId: ID!) {
+      deviceToken(deviceId: $deviceId) {
+          id
+      }
+  }
+variables: "{\"deviceId\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000030

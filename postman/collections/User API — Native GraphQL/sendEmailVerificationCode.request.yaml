@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: sendEmailVerificationCode
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation SendEmailVerificationCode {
+      sendEmailVerificationCode {
+          data
+          id
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000120

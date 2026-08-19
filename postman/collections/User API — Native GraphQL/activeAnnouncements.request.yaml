@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: activeAnnouncements
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query ActiveAnnouncements {
+      activeAnnouncements {
+          bannerUrl
+          buttonText
+          content
+          id
+          link
+          title
+          viewed
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000000

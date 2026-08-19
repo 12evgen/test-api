@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: emailVerificationDetails
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query EmailVerificationDetails {
+      emailVerificationDetails {
+          codeLength
+          counter
+          id
+          limit
+          limitReached
+          validityInMinutes
+          verified
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000034

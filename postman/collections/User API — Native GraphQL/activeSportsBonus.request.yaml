@@ -1,0 +1,31 @@
+$kind: graphql-request
+name: activeSportsBonus
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query ActiveSportsBonus {
+      activeSportsBonus {
+          amount
+          campaignId
+          campaignName
+          cancellable
+          createdTime
+          currency
+          expirationTime
+          id
+          initialAmount
+          maxConversion
+          providerId
+          providerIdTranslation
+          rolloverRemain
+          rolloverRequired
+          status
+          type
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000002

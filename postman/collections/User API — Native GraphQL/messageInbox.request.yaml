@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: messageInbox
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query MessageInbox($id: ID!) {
+      messageInbox(id: $id) {
+          content
+          createdTime
+          id
+          important
+          readTime
+          status
+          subject
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000048

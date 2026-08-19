@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: phoneNumberVerificationDetails
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query PhoneNumberVerificationDetails {
+      phoneNumberVerificationDetails {
+          codeLength
+          counter
+          id
+          limit
+          limitReached
+          validityInMinutes
+          verified
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000055

@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: startOnlineVerification
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation StartOnlineVerification($flowId: String!) {
+      startOnlineVerification(flowId: $flowId) {
+          data
+          id
+      }
+  }
+variables: "{\"flowId\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000124

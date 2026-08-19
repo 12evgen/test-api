@@ -1,0 +1,42 @@
+$kind: graphql-request
+name: payment
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query Payment($id: ID!) {
+      payment(id: $id) {
+          accountBank
+          accountLastDigits
+          amount
+          bankAbbreviation
+          cancelable
+          card
+          cardBrand
+          cardExpMonth
+          cardExpYear
+          cardFirstDigits
+          cardIcon
+          cardLastDigits
+          cardName
+          createdTime
+          currency
+          description
+          feePercentage
+          fixedFee
+          id
+          percentageFee
+          providerAmount
+          providerCurrency
+          status
+          statusTranslation
+          totalFee
+          type
+          typeTranslation
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000050

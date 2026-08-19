@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: deleteStoredPaymentDetails
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation DeleteStoredPaymentDetails($id: ID!) {
+      deleteStoredPaymentDetails(id: $id) {
+          data
+          id
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000097

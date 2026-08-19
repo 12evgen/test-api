@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: deletePushNotifications
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation DeletePushNotifications($ids: [ID!]!) {
+      deletePushNotifications(ids: $ids) {
+          data
+          id
+      }
+  }
+variables: "{\"ids\":[]}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000096

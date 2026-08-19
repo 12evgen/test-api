@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: login
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation Login($input: LoginRequest!) {
+      login(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"password\":\"\",\"username\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000103

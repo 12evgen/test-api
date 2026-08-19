@@ -1,0 +1,18 @@
+$kind: graphql-request
+name: paymentMethodBonuses
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query PaymentMethodBonuses($input: PaymentBonusesRequest!) {
+      paymentMethodBonuses(input: $input) {
+          amount
+          bonusType
+          id
+      }
+  }
+variables: "{\"input\":{\"amount\":0,\"methodId\":\"\",\"type\":\"DEPOSIT\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000051

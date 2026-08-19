@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: changeLocale
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation ChangeLocale($input: ChangeLocaleRequest!) {
+      changeLocale(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"locale\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000081

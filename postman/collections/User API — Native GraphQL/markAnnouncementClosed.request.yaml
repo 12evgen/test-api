@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: markAnnouncementClosed
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation MarkAnnouncementClosed($ids: [ID!]!) {
+      markAnnouncementClosed(ids: $ids) {
+          data
+          id
+      }
+  }
+variables: "{\"ids\":[]}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000112

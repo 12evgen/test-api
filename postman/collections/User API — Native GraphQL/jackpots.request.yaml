@@ -1,0 +1,19 @@
+$kind: graphql-request
+name: jackpots
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query Jackpots {
+      jackpots {
+          currency
+          id
+          name
+          tierNumber
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000040

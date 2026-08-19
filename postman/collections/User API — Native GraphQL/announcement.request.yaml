@@ -1,0 +1,24 @@
+$kind: graphql-request
+name: announcement
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query Announcement($id: ID!) {
+      announcement(id: $id) {
+          availableFromTime
+          availableToTime
+          content
+          createdTime
+          id
+          name
+          siteId
+          status
+          subject
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000004

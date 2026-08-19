@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: completeExternalAuthFlow
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation CompleteExternalAuthFlow($flowId: String!) {
+      completeExternalAuthFlow(flowId: $flowId) {
+          completed
+          sessionCreated
+      }
+  }
+variables: "{\"flowId\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000083

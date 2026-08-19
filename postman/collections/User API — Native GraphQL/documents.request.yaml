@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: documents
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query Documents($input: DocumentSearchSearchRequest!) {
+      documents(input: $input) {
+          hasContent
+          isFirst
+          isLast
+          page
+          size
+          totalElements
+          totalPages
+      }
+  }
+variables: "{\"input\":{\"page\":0,\"size\":0,\"statuses\":[]}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000033

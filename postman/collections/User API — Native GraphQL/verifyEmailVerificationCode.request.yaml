@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: verifyEmailVerificationCode
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation VerifyEmailVerificationCode($input: VerifyVerificationRequest!) {
+      verifyEmailVerificationCode(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"code\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000132

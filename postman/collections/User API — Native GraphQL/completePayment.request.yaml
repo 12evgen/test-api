@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: completePayment
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation CompletePayment($input: CompletePaymentRequest!) {
+      completePayment(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"paymentId\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000084

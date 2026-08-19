@@ -1,0 +1,21 @@
+$kind: graphql-request
+name: validateUserDetail
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation ValidateUserDetail($input: ValidateUserRequest!) {
+      validateUserDetail(input: $input) {
+          uniqueEmail
+          uniquePhoneNumber
+          uniqueUserName
+          validEmail
+          validPhoneNumber
+          validUserName
+      }
+  }
+variables: "{\"input\":{}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000131

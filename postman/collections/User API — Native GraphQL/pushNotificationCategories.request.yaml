@@ -1,0 +1,18 @@
+$kind: graphql-request
+name: pushNotificationCategories
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query PushNotificationCategories {
+      pushNotificationCategories {
+          description
+          id
+          name
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000056

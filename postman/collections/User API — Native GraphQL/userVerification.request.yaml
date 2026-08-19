@@ -1,0 +1,16 @@
+$kind: graphql-request
+name: userVerification
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query UserVerification($input: UserVerificationRequest!) {
+      userVerification(input: $input) {
+          __typename
+      }
+  }
+variables: "{\"input\":{\"type\":\"ADDRESS\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000073

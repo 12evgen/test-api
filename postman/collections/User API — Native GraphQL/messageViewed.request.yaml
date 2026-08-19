@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: messageViewed
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation MessageViewed($input: PushUserMessageViewedRequest!) {
+      messageViewed(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"id\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000115

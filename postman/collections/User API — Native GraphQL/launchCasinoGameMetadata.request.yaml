@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: launchCasinoGameMetadata
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query LaunchCasinoGameMetadata($input: CasinoGameLaunchRequest) {
+      launchCasinoGameMetadata(input: $input) {
+          id
+          launchUrl
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000044

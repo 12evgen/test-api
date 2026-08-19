@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: registerAndLogin
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation RegisterAndLogin($input: RegisterRequest!) {
+      registerAndLogin(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"locale\":\"\",\"password\":\"\",\"termsAccepted\":false}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000116

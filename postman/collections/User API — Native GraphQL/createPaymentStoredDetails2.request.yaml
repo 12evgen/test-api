@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: createPaymentStoredDetails2
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation CreatePaymentStoredDetails2($input: CreatePaymentStoredDetailsRequest!) {
+      createPaymentStoredDetails2(input: $input) {
+          paymentId
+          subscriptionId
+      }
+  }
+variables: "{\"input\":{\"paymentId\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000092

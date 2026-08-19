@@ -1,0 +1,16 @@
+$kind: graphql-request
+name: statusOnlineVerification
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query StatusOnlineVerification {
+      statusOnlineVerification {
+          status
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000068

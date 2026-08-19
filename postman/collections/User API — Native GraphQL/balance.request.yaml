@@ -1,0 +1,18 @@
+$kind: graphql-request
+name: balance
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query Balance($input: GetBalanceRequest) {
+      balance(input: $input) {
+          balance
+          currency
+          id
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000006

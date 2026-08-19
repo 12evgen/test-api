@@ -1,0 +1,25 @@
+$kind: graphql-request
+name: paymentOptions
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query PaymentOptions($type: PaymentType!) {
+      paymentOptions(type: $type) {
+          feeType
+          fixedFee
+          id
+          lastUsedTime
+          maxAmount
+          minAmount
+          name
+          percentageFee
+          suggestedAmounts
+          type
+      }
+  }
+variables: "{\"type\":\"DEPOSIT\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000052

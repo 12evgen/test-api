@@ -1,0 +1,29 @@
+$kind: graphql-request
+name: campaignDetail
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query CampaignDetail($campaignId: ID!) {
+      campaignDetail(campaignId: $campaignId) {
+          addDepositToRollover
+          bannerUrl
+          description
+          endTime
+          id
+          maxConversionAmount
+          maxDepositAmount
+          minDepositAmount
+          name
+          startTime
+          status
+          termsAndConditions
+          type
+          wageringFactor
+      }
+  }
+variables: "{\"campaignId\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000010

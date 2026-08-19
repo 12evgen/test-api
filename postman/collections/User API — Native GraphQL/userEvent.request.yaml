@@ -1,0 +1,26 @@
+$kind: graphql-request
+name: userEvent
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query UserEvent($id: ID!) {
+      userEvent(id: $id) {
+          browser
+          country
+          createdTime
+          id
+          ip
+          mobile
+          os
+          region
+          type
+          typeId
+          typeIdTranslation
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000071

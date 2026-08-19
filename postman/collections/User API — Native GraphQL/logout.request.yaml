@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: logout
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation Logout($input: LogoutRequest!) {
+      logout(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000108

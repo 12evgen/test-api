@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: removeLimit
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation RemoveLimit($input: RemoveLimitRequest!) {
+      removeLimit(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"name\":\"DailyDeposit\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000118

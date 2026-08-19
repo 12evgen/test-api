@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: confirmSessionNotificationPopup
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation ConfirmSessionNotificationPopup {
+      confirmSessionNotificationPopup {
+          data
+          id
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000087

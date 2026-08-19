@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: realityCheckData
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query RealityCheckData {
+      realityCheckData {
+          bonusBet
+          bonusGgr
+          bonusWin
+          cashBet
+          cashGgr
+          cashWin
+          sessionTime
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000059

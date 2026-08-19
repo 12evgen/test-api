@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: sportsBets
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query SportsBets($input: SportsBetSearchRequest!) {
+      sportsBets(input: $input) {
+          hasContent
+          isFirst
+          isLast
+          page
+          size
+          totalElements
+          totalPages
+      }
+  }
+variables: "{\"input\":{\"page\":0,\"size\":0,\"sort\":\"ASC\",\"sortBy\":\"createdTime\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000064

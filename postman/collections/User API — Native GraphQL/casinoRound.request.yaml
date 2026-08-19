@@ -1,0 +1,36 @@
+$kind: graphql-request
+name: casinoRound
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query CasinoRound($id: ID!) {
+      casinoRound(id: $id) {
+          bonusClose
+          bonusNet
+          bonusOpen
+          bonusStake
+          bonusWin
+          cashClose
+          cashNet
+          cashOpen
+          cashStake
+          cashWin
+          createdTime
+          currency
+          endTime
+          gameId
+          gameIdTranslation
+          id
+          providerId
+          providerIdTranslation
+          roundId
+          status
+          statusTranslation
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000022

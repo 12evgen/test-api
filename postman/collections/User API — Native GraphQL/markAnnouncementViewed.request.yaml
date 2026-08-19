@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: markAnnouncementViewed
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation MarkAnnouncementViewed($ids: [ID!]!) {
+      markAnnouncementViewed(ids: $ids) {
+          data
+          id
+      }
+  }
+variables: "{\"ids\":[]}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000113

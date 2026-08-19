@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: coolOffAccount
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation CoolOffAccount($input: CoolOffRequest!) {
+      coolOffAccount(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"period\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000090

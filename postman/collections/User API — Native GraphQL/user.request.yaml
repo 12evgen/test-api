@@ -1,0 +1,69 @@
+$kind: graphql-request
+name: user
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query User {
+      user {
+          address1
+          address2
+          ageConfirmed
+          announcementMarketingAccepted
+          birthDate
+          birthState
+          bonusOptedIn
+          city
+          colony
+          country
+          county
+          curpNumber
+          curpNumberVerified
+          currency
+          district
+          email
+          emailMarketingAccepted
+          emailVerified
+          exteriorNumber
+          firstName
+          freshChatRestoreId
+          gender
+          houseNumber
+          id
+          interiorNumber
+          lastName
+          licenseAccepted
+          locale
+          loginEmailOptedIn
+          marketingAccepted
+          messagingMarketingAccepted
+          middleName
+          municipality
+          nickName
+          phoneMarketingAccepted
+          phoneNumber
+          phoneNumberVerified
+          profession
+          province
+          pushNotificationMarketingAccepted
+          rfcNumberMx2
+          rfcNumberMx2NumberVerified
+          secondLastName
+          smsMarketingAccepted
+          speiClabeAccount
+          ssnLastDigits
+          ssnNumber
+          state
+          streetName
+          strongAuth
+          termsAccepted
+          timezone
+          userName
+          zipCode
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000070

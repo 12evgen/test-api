@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: lastSystemNotification
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query LastSystemNotification {
+      lastSystemNotification {
+          message
+          type
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000043

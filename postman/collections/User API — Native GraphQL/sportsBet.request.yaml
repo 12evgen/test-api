@@ -1,0 +1,35 @@
+$kind: graphql-request
+name: sportsBet
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query SportsBet($id: ID!) {
+      sportsBet(id: $id) {
+          betType
+          bonusPart
+          bonusPartPercentage
+          bonusStake
+          bonusWin
+          cashGgr
+          cashNet
+          cashStake
+          cashWin
+          createdTime
+          currency
+          eventName
+          id
+          marketTypes
+          noEvents
+          providerId
+          providerIdTranslation
+          reference
+          status
+          statusTranslation
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000063

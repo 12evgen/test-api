@@ -1,0 +1,22 @@
+$kind: graphql-request
+name: searchMessageInbox
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query SearchMessageInbox($input: UserMessageInboxSearchRequest) {
+      searchMessageInbox(input: $input) {
+          hasContent
+          isFirst
+          isLast
+          page
+          size
+          totalElements
+          totalPages
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000060

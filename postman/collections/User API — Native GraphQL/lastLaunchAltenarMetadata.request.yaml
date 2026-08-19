@@ -1,0 +1,16 @@
+$kind: graphql-request
+name: lastLaunchAltenarMetadata
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query LastLaunchAltenarMetadata {
+      lastLaunchAltenarMetadata {
+          token
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000041

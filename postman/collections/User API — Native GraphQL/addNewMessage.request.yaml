@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: addNewMessage
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation AddNewMessage($input: AddNewMessageRequest!) {
+      addNewMessage(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"messageId\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000076

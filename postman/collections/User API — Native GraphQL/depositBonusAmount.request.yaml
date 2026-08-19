@@ -1,0 +1,14 @@
+$kind: graphql-request
+name: depositBonusAmount
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query DepositBonusAmount($input: DepositBonusAmountRequest) {
+      depositBonusAmount(input: $input)
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000029

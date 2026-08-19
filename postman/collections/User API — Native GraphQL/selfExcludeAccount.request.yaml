@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: selfExcludeAccount
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation SelfExcludeAccount($input: SelfExcludeRequest!) {
+      selfExcludeAccount(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000119

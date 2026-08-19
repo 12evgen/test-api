@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: markAllPushNotificationsViewed
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation MarkAllPushNotificationsViewed {
+      markAllPushNotificationsViewed {
+          data
+          id
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000111

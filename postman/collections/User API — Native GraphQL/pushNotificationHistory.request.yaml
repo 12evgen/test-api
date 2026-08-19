@@ -1,0 +1,25 @@
+$kind: graphql-request
+name: pushNotificationHistory
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query PushNotificationHistory($id: ID!) {
+      pushNotificationHistory(id: $id) {
+          bannerUrl
+          body
+          categoryId
+          clickAction
+          createdTime
+          expiryTime
+          id
+          title
+          viewed
+          viewedTime
+      }
+  }
+variables: "{\"id\":\"\"}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000058

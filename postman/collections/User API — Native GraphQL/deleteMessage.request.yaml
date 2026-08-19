@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: deleteMessage
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation DeleteMessage($input: PushUserMessageViewedRequest!) {
+      deleteMessage(input: $input) {
+          data
+          id
+      }
+  }
+variables: "{\"input\":{\"id\":\"\"}}"
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000095

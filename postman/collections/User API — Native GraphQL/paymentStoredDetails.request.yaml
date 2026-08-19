@@ -1,0 +1,18 @@
+$kind: graphql-request
+name: paymentStoredDetails
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query PaymentStoredDetails {
+      paymentStoredDetails {
+          deletable
+          id
+          name
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000053

@@ -1,0 +1,17 @@
+$kind: graphql-request
+name: launchAltenar
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  mutation LaunchAltenar {
+      launchAltenar {
+          data
+          id
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
+order: 1745668300000101
