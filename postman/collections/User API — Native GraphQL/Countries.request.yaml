@@ -1,0 +1,15 @@
+$kind: graphql-request
+url: https://dev-user-api.amatechs.net/graphql
+query: |
+  query Countries {
+      countries {
+          id
+          name
+      }
+  }
+variables: ""
+headers:
+  x-site-name: playbros
+settings: {}
+schema:
+  source: auto
